@@ -19,3 +19,4 @@ This repository is intended to be used as a starting point for building a web ap
 8. Sequelize for database.
 9. Global config file to add your database settings etc
 10. Angular front end with authentication checks on routes.
+11. Notification directive in Angular. By calling $rootScope.$emit('notify', { success: false, message: 'Display this message'}); a bootstrap alert box will appear. 'alert-danger' if success is false, 'alert-success' is success is true.
