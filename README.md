@@ -5,7 +5,7 @@ A starting point for an app using node, passport, sequelize, angular.
 
 Clone this repository, then run npm install in the directory to grab the required npm modules.
 
-<h2>Usage</h2>
+<h2>About this repo</h2>
 
 This repository is intended to be used as a starting point for building a web app. It contains a basic setup including:
 
