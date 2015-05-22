@@ -1,0 +1,28 @@
+{
+  "name": "node-passport-sequelize-angular-stack",
+  "description": "A starting point for a web application using Nodejs, Passport, Sequelize & Angular",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "async": "*",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "connect-flash": "*",
+    "express": "*",
+    "express-session": "*",
+    "jade": "*",
+    "lodash": "*",
+    "mysql": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-twitter": "*",
+    "passport-facebook": "*",
+    "sequelize": "*",
+    "socket.io": "*",
+    "validator": "*"
+  }
+}

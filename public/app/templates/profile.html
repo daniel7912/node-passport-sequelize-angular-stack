@@ -1,0 +1,63 @@
+<section class="page-content">
+
+	<div class="container">
+
+		<div ng-if="loggedInUser.generated_username > 0">
+			<div class="alert alert-info">
+				<div class="row">
+					<div class="col-md-12">
+						<p>You currently have the auto generated username {{loggedInUser.username}}. Please enter your desired username below.</p>
+						<form ng-submit="changeUsername()">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" ng-model="profileData.username", placeholder="Enter your new username"/>
+								</div>
+								<div class="col-md-6">
+									<button type="submit" class="btn btn-success">Change Username</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Welcome {{loggedInUser.username}}!</h1>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Profile</h1>
+				<form ng-submit="updateProfile()">
+					<div class="form-group">
+						<label>Email Address</label>
+						<input ng-model="profileData.email" type="text" class="form-control"/>
+					</div>
+					<hr>
+					<p>Only fill in the fields below if you wish to change your password</p>
+					<div class="form-group">
+						<label>Current Password</label>
+						<input ng-model="profileData.currentPassword" type="password" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<label>New Password</label>
+						<input ng-model="profileData.newPassword" type="password" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<label>Confirm New Password</label>
+						<input ng-model="profileData.confirmNewPassword" type="password" class="form-control"/>
+					</div>
+					<button type="submit" class="btn btn-warning">Update Profile</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</section>

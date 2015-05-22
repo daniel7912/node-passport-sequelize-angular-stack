@@ -1,0 +1,42 @@
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-6 col-md-offset-3 text-center">
+
+			<form class="login-form" ng-submit="submitLoginForm()" role="form">
+				<div class="form-group">
+					<label>Username</label>
+					<input ng-model="username" class="form-control" type="text" name="username" placeholder="Your username"/>
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input ng-model="password" class="form-control" type="password" name="password" placeholder="Your password"/>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-success btn-lg btn-block" type="submit">Login</button>
+				</div>
+			</form>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-12">
+					<p><a href="/register" class="btn btn-success btn-block btn-lg">Register</a></p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<p><a href="/auth/facebook" target="_self" class="btn btn-primary btn-block btn-lg">Login with Facebook</a></p>
+				</div>
+				<div class="col-md-6">
+					<p><a href="/auth/twitter" target="_self" class="btn btn-warning btn-block btn-lg">Login with Twitter</a></p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

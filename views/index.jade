@@ -1,0 +1,43 @@
+doctype html
+html(ng-app="yourAppName")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title(ng-bind="page.title")
+
+		link(rel='stylesheet', href='/assets/css/style.css')
+
+	body(ng-controller="MainController")
+
+		include ./includes/header.jade
+
+		div.site-wrapper(ng-view)
+
+		script(type="text/javascript", src='//code.jquery.com/jquery-2.1.1.min.js')
+		script(type="text/javascript", src='/assets/js/bootstrap.min.js')
+		script(type="text/javascript", src='/assets/js/lodash.min.js')
+		script(type="text/javascript", src='/socket.io/socket.io.js')
+		script(type="text/javascript", src='/assets/js/modernizr.custom.js')
+		script(type="text/javascript", src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js')
+		script(type="text/javascript", src='/assets/js/angular-route.min.js')
+		script(type="text/javascript", src='/assets/js/angular-sanitize.min.js')
+		script(type="text/javascript", src='/assets/js/socket.js')
+
+		// Controllers
+		script(type="text/javascript", src='/app/controllers/MainCtrl.js')
+		script(type="text/javascript", src='/app/controllers/UserCtrl.js')
+		script(type="text/javascript", src='/app/controllers/ProfileCtrl.js')
+
+		// Services
+		script(type="text/javascript", src='/app/services/MainService.js')
+		script(type="text/javascript", src='/app/services/UserService.js')
+		script(type="text/javascript", src='/app/services/ValidationService.js')
+		script(type="text/javascript", src='/app/services/SocketService.js')
+
+		// Everything else
+		script(type="text/javascript", src='/app/app-directives.js')
+		script(type="text/javascript", src='/app/app-filters.js')
+		script(type="text/javascript", src='/app/app-routes.js')
+		script(type="text/javascript", src='/app/app-main.js')
+

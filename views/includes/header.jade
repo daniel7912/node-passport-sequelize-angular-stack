@@ -1,0 +1,26 @@
+header#header
+
+	nav.navbar.navbar-default(role='navigation')
+		.container
+
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#main-navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(ng-href="/")
+
+			#main-navbar.collapse.navbar-collapse
+				.row
+					ul.nav.navbar-nav
+						li
+							a(ng-href="/") Home
+						li(ng-if="!loggedInUser")
+							a(ng-href="/login") Login/Register
+						li(ng-if="loggedInUser")
+							a(ng-href="/profile") Profile
+
+.container
+	.notification.text-center.alert(notification, ng-show="notification.visible")
+		p(ng-bind-html="notification.message")
